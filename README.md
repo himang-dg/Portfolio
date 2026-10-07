@@ -1,25 +1,25 @@
-# HIMANG — Web Developer & Digital Creator 🚀
+# HIMANG - Web Developer & Digital Creator
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-Private-red?style=flat-square)]()
 
-Personal portfolio website yang modern, responsif, dan fully animated — dibangun dengan Next.js 16, Tailwind CSS v4, dan Framer Motion.
+Website portfolio personal yang modern, responsif, dan interaktif - dibangun menggunakan Next.js 16 (Turbopack), Tailwind CSS v4, dan Framer Motion.
 
 ---
 
 <div align="center">
-<h3>💸 Support Me 💰</h3>
+<h3>Support Me</h3>
 <table>
   <tr>
     <td align="center">
-      <a href="https://paypal.me/DogGhozt" target="_blank">
+      <a href="https://paypal.me/DogGhozt" target="_blank" rel="noopener noreferrer">
         <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/paypal/default.svg" width="52" height="40" alt="PayPal" />
       </a>
     </td>
     <td align="center">
-      <a href="https://tako.id/himang" target="_blank">
+      <a href="https://tako.id/himang" target="_blank" rel="noopener noreferrer">
         <img src="https://img.icons8.com/?size=100&id=13013&format=png&color=000000" width="52" height="40" alt="Tako" />
       </a>
     </td>
@@ -29,107 +29,104 @@ Personal portfolio website yang modern, responsif, dan fully animated — dibang
 
 ---
 
-🌐 **Live:** [himang.vercel.app](https://himang.vercel.app/)
+**Live Preview:** [himang.vercel.app](https://himang.vercel.app/)
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-- 🎨 **Dark Mode Premium** — Desain gelap modern dengan glassmorphism, gradient glow, dan noise texture
-- 🌍 **Bilingual (ID/EN)** — Auto-detect bahasa browser, switchable manual
-- 🎬 **Animasi Halus** — Framer Motion di seluruh section (scroll reveal, hover effects, typing animation)
-- 📱 **Fully Responsive** — Dioptimalkan untuk Mobile, Tablet, dan Desktop
-- 💼 **Experience & Education** — Timeline interaktif dengan tab switching antara Pengalaman Kerja dan Pendidikan
-- 🏷️ **Tag Icons** — Setiap teknologi/skill otomatis mendapat icon berwarna dari React Icons
-- 📂 **Markdown Projects** — Kelola proyek dari file `.md` tanpa database
-- 🔍 **SEO Optimized** — Meta tags, Open Graph, Twitter Card, dan semantic HTML
-- ⚡ **Performa Tinggi** — Next.js Turbopack, optimized images, code splitting
+- **Dark Mode Premium:** Desain tema gelap dengan sentuhan glassmorphism, glowing accents, dan canvas partikel ambient.
+- **Bilingual (ID / EN):** Deteksi otomatis bahasa peramban dengan opsi alih bahasa manual menggunakan segmented switch `[ ID | EN ]`.
+- **Motion Halus & Terarah:** Didukung Framer Motion dengan physics spring alami, synchronized entrance, dan dukungan penuh untuk preferensi `prefers-reduced-motion`.
+- **Proyek Terkurasi (3 Card / Page):** Tampilan katalog proyek yang fokus dan rapi (3 kartu per halaman) dilengkapi pagination interaktif serta filter kategori (All, Web, Design, Tools, Game).
+- **Modal Detail Proyek:** Menampilkan dokumentasi lengkap berbasis Markdown (`react-markdown` + `remark-gfm`), thumbnail layar penuh, dan tautan live / repositori.
+- **Timeline Pengalaman & Edukasi:** Antarmuka tab interaktif antara Pengalaman Kerja dan Riwayat Pendidikan dengan badge teknologi dinamis.
+- **Layanan Lengkap:** 4 pilar keahlian utama (Web Development, Roblox Development, Desain Grafis, dan Content Creator).
+- **Kopas Email & Kontak:** Salin alamat email secara instan dengan indikator umpan balik visual dan integrasi seluruh akun media sosial.
+- **Performa & SEO:** Menggunakan Next.js Turbopack, font Plus Jakarta Sans dan JetBrains Mono, optimasi gambar Next Image, dan Open Graph metadata.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Kategori | Teknologi |
-|----------|-----------|
-| **Framework** | Next.js 16+ (App Router, Turbopack) |
-| **Bahasa** | TypeScript 5 |
+|---|---|
+| **Core Framework** | Next.js 16 (App Router, Turbopack) |
+| **Library UI** | React 19 |
+| **Bahasa** | TypeScript (Strict mode) |
 | **Styling** | Tailwind CSS v4 + `@tailwindcss/typography` |
 | **Animasi** | Framer Motion |
 | **Ikon** | React Icons + Lucide React |
-| **Font** | Inter + JetBrains Mono (Google Fonts) |
-| **Konten** | Markdown via `gray-matter` + `react-markdown` |
-| **Deployment** | Vercel |
+| **Tipografi** | Plus Jakarta Sans & JetBrains Mono (`next/font/google`) |
+| **Parser Konten** | `gray-matter` + `react-markdown` + `remark-gfm` |
+| **Platform Hosting** | Vercel |
 
 ---
 
-## 📂 Struktur Proyek
+## Struktur Proyek
 
-```
+```text
 src/
 ├── app/
-│   ├── globals.css          # Design system & utility classes
-│   ├── layout.tsx           # Root layout (fonts, metadata, i18n provider)
-│   └── page.tsx             # Halaman utama (komposisi semua section)
+│   ├── favicon.ico             # Favicon website
+│   ├── globals.css             # Tema Tailwind CSS v4 & custom variables
+│   ├── layout.tsx              # Root layout (fonts, SEO metadata, i18n provider)
+│   └── page.tsx                # Halaman utama (komposisi section)
 ├── components/
-│   ├── Navbar.tsx            # Navigasi + mobile drawer + language toggle
-│   ├── Hero.tsx              # Landing section + typing animation
-│   ├── About.tsx             # Bio + foto profil + statistik
-│   ├── Skills.tsx            # Grid tech stack dengan hover effects
-│   ├── Services.tsx          # Kartu layanan (Web Dev, Roblox, Design, Content)
-│   ├── Projects.tsx          # Grid proyek + filter kategori + modal detail
-│   ├── ProjectCard.tsx       # Kartu individual proyek
-│   ├── Experience.tsx        # Tab Work Experience & Education + timeline
-│   ├── Contact.tsx           # Email + social links
-│   ├── Footer.tsx            # Copyright + back to top
-│   ├── SectionWrapper.tsx    # Wrapper animasi scroll reveal
-│   └── TagIcon.tsx           # Mapping tag → icon React Icons
+│   ├── About.tsx               # Bio, foto profil, dan statistik count-up
+│   ├── BackToTop.tsx           # Tombol kembali ke atas dengan scroll tracking
+│   ├── Contact.tsx             # Kartu email langsung dan tautan sosial media
+│   ├── Experience.tsx          # Tab Work Experience & Education dengan timeline
+│   ├── FloatingParticles.tsx   # Canvas partikel ambient dengan pembersihan memori aman
+│   ├── Footer.tsx              # Signature dan hak cipta minimalis
+│   ├── Hero.tsx                # Hero section dengan animasi teks peran dinamis
+│   ├── LoadingScreen.tsx       # Animasi pembuka saat website pertama kali dimuat
+│   ├── Navbar.tsx              # Navigasi sticky, mobile drawer, dan segmented switcher [ID | EN]
+│   ├── ProjectCard.tsx         # Kartu proyek dengan efek hover dan icon kategori
+│   ├── Projects.tsx            # Katalog proyek (3 card/halaman, filter, modal)
+│   ├── SectionWrapper.tsx      # Pembungkus section dengan scroll reveal lembut
+│   ├── Services.tsx            # 4 kartu layanan keahlian
+│   ├── Skills.tsx              # Matriks keahlian teknologi berdasarkan domain
+│   └── TagIcon.tsx             # Mapping dinamis tag teknologi ke icon
 ├── content/
-│   └── projects/             # File markdown proyek (.md)
+│   └── projects/               # Berkas markdown dokumentasi proyek (.md)
 ├── data/
-│   ├── personal.ts           # Data diri, pengalaman kerja, pendidikan
-│   └── techstack.ts          # Daftar keahlian + ikon
+│   ├── personal.ts             # Data profil, tautan sosial media, dan CV
+│   └── techstack.tsx           # Daftar teknologi dan ikon keahlian
 ├── hooks/
-│   └── useTranslation.tsx    # Context & hook multi-bahasa
+│   └── useTranslation.tsx      # Provider & context multi-bahasa (ID / EN)
 ├── lib/
-│   └── projects.ts           # Parser markdown proyek
+│   └── projects.ts             # Parser metadata markdown proyek
 └── locales/
-    ├── en.json               # Teks UI bahasa Inggris
-    └── id.json               # Teks UI bahasa Indonesia
+    ├── en.json                 # Kamus terjemahan Bahasa Inggris
+    └── id.json                 # Kamus terjemahan Bahasa Indonesia
 ```
 
 ---
 
-## 👨‍💻 Cara Mengubah Data
+## Panduan Pengelolaan Data
 
-### 1. Data Diri & Sosial Media
+### 1. Data Diri & Tautan Sosial Media
 
-Buka **`src/data/personal.ts`**:
+Edit berkas **`src/data/personal.ts`**:
 
 ```typescript
 export const personalData = {
   name: "Benidiktus Himang",
   title: "Web Developer & Digital Creator",
-  profilePicture: "/himme.png",
+  profilePicture: "/himme.webp",
   resumeUrl: "/Las-Benidiktus Himang-CV.pdf",
-  roles: ["Web Developer", "Roblox Developer", ...],      // Typing animation (EN)
-  roles_id: ["Web Developer", "Roblox Developer", ...],    // Typing animation (ID)
-  bio: ["...", "..."],      // Bahasa Indonesia
-  bio_en: ["...", "..."],   // English
-  socials: [...]
+  roles: ["Web Developer", "Roblox Developer", ...],      // Animasi peran (EN)
+  roles_id: ["Web Developer", "Roblox Developer", ...],   // Animasi peran (ID)
+  bio: ["...", "..."],      // Bio Bahasa Indonesia
+  bio_en: ["...", "..."],   // Bio Bahasa Inggris
+  socials: [...]            // Tautan media sosial
 };
 ```
 
-**Tambah medsos baru:**
-1. Cari icon di [react-icons.github.io](https://react-icons.github.io/react-icons/)
-2. Import icon di baris atas file
-3. Tambah ke array `socials`:
-   ```typescript
-   { name: "Twitter", url: "https://...", icon: FaTwitter, color: "text-blue-400", bg: "bg-blue-400/10 hover:bg-blue-400/20" }
-   ```
+### 2. Riwayat Kerja & Pendidikan
 
-### 2. Pengalaman Kerja & Pendidikan
-
-Pengalaman Kerja (*Work Experience*) dan Pendidikan (*Education*) dikelola terpusat di file lokalisasi **`src/locales/id.json`** dan **`src/locales/en.json`** pada key `"experience"`:
+Riwayat kerja dan pendidikan dikelola di berkas lokalisasi **`src/locales/id.json`** dan **`src/locales/en.json`** pada bagian `"experience"`:
 
 ```json
 {
@@ -147,108 +144,75 @@ Pengalaman Kerja (*Work Experience*) dan Pendidikan (*Education*) dikelola terpu
     ],
     "education": [
       {
-        "school": "Nama Sekolah/Kampus",
-        "description": "Jurusan / Program Studi",
-        "year": "2020 – 2024",
-        "location": "Kota, Indonesia"
+        "school": "STMIK Widya Cipta Dharma",
+        "description": "Jurusan Teknik Informatika",
+        "year": "2020 - Sekarang",
+        "location": "Samarinda, Indonesia"
       }
     ]
   }
 }
 ```
 
-> 💡 Tags otomatis mendapat icon berwarna! Lihat mapping lengkap di `src/components/TagIcon.tsx`.
+### 3. Menambah Proyek Baru
 
-### 3. Proyek & Postingan (Markdown & Lokalisasi)
+Setiap proyek terdiri dari dua bagian:
 
-Data postingan proyek (Judul, Deskripsi, dan Isi Konten Markdown) tersimpan terpusat di dua tempat:
-1. **File JSON Lokalisasi:** **`src/locales/id.json`** & **`src/locales/en.json`** pada key `"projects.items.[id]"`
-   ```json
-   "items": {
-     "roblox-map-development": {
-       "title": "Roblox Map: MangObby",
-       "description": "Mendesain dan membangun lingkungan pulau terbang...",
-       "content": "# Develop Roblox Map: MangObby\n\n..."
-     }
-   }
+1. **Berkas Markdown (`src/content/projects/[slug].md`)**:
+   Memuat frontmatter seperti judul, tanggal, kategori, tag, url gambar, tautan live / GitHub, dan isi artikel dokumentasi:
+   ```markdown
+   ---
+   title: "Nama Proyek"
+   description: "Deskripsi singkat proyek."
+   date: "2026-05"
+   image: "/images/nama-folder/gambar.webp"
+   category: "Web"
+   tags: ["Next.js", "Tailwind CSS", "TypeScript"]
+   liveUrl: "https://example.com"
+   githubUrl: "https://github.com/..."
+   ---
+
+   # Dokumentasi Proyek
+   ...
    ```
-2. **File Markdown:** Folder **`src/content/projects/`** untuk file `.md` utama.
+2. **Kamus Teks Terjemahan (`src/locales/id.json` & `en.json`)**:
+   Tambahkan terjemahan judul, deskripsi, dan konten di dalam objek `"projects.items.[slug]"`.
 
-### 4. Tech Stack / Keahlian
+### 4. File Statis & Aset Gambar
 
-Buka **`src/data/techstack.ts`**:
+Letakkan semua file gambar dan berkas unduhan di folder **`public/`**:
 
-```typescript
-{ icon: FaPython, name: "Python", color: "text-blue-500", bg: "bg-blue-500/10" }
-```
-
-### 5. Teks UI & Lokalisasi
-
-Semua teks UI, navigasi, serta postingan proyek bilingual dikelola terpusat di:
-- `src/locales/id.json` — Bahasa Indonesia
-- `src/locales/en.json` — Bahasa Inggris
-
-> ⚠️ Pastikan struktur key antara `id.json` dan `en.json` tetap simetris (1:1).
+| Berkas | Lokasi | Format yang Disarankan |
+|---|---|---|
+| Foto Profil | `public/himme.webp` | WebP (rasio 1:1) |
+| Berkas CV | `public/Las-Benidiktus Himang-CV.pdf` | PDF |
+| Tangkapan Layar Proyek | `public/images/[nama-proyek]/` | WebP / PNG (rasio 16:9) |
+| Icon Lokal Khusus | `public/iconLocal/` | WebP / SVG |
 
 ---
 
-## 🖼 Panduan Gambar & File Statis
-
-Semua file statis ditaruh di folder **`public/`**:
-
-| File | Lokasi | Resolusi Ideal | Format |
-|------|--------|----------------|--------|
-| Foto Profil | `/himme.png` | 500×500 — 800×800 px (1:1) | PNG / WebP |
-| Thumbnail Proyek | `/projects/nama.png` | 1280×720 — 1920×1080 px (16:9) | PNG / WebP |
-| Favicon | `src/app/favicon.ico` | 64×64 px | ICO |
-| CV / Resume | `/Las-Benidiktus Himang-CV.pdf` | — | PDF |
-
-> 💡 Usahakan gambar proyek < 500 KB agar website tetap cepat.
-
----
-
-## 🚀 Menjalankan Secara Lokal
+## Menjalankan di Lingkungan Lokal
 
 ```bash
-# Install dependensi (sekali saja)
+# 1. Pasang dependensi
 npm install
 
-# Jalankan dev server
+# 2. Jalankan server pengembangan
 npm run dev
 
-# Buka di browser
-# http://localhost:3000
+# Buka http://localhost:3000 di peramban
 ```
 
-Setiap kali Anda save file `.md`, `.ts`, atau `.tsx`, browser otomatis refresh (Hot Module Replacement).
-
----
-
-## 📦 Build & Deploy
+## Membangun untuk Produksi
 
 ```bash
-# Build produksi
+# Lakukan kompilasi build produksi Next.js
 npm run build
 
-# Jalankan build lokal
-npm start
+# Jalankan server hasil build
+npm run start
 ```
 
-**Deploy ke Vercel:**
-1. Push kode ke GitHub
-2. Connect repository di [vercel.com](https://vercel.com)
-3. Vercel akan auto-build setiap push ke branch `main`
-
----
-
-## 📝 Catatan Penting
-
-- **Tag Icons** — Jika menggunakan teknologi baru yang belum ada iconnya, tambahkan mapping di `src/components/TagIcon.tsx` menggunakan icon dari [react-icons](https://react-icons.github.io/react-icons/)
-- **Experience Section** — Mendukung tab switching antara "Pengalaman Kerja" (freelance/magang) dan "Pendidikan"
-- **Bahasa Otomatis** — Website auto-detect bahasa browser pengunjung. Jika browser bahasa Indonesia → tampil ID, lainnya → EN. Bisa di-switch manual via tombol 🇮🇩/🇬🇧 di navbar
-- **Animasi** — Semua section menggunakan scroll-triggered animations via Framer Motion. Animasi hanya berjalan sekali (tidak replay saat scroll ulang)
-
----
 ---
 
 <p align="right">
@@ -256,6 +220,7 @@ npm start
     <img src="https://img.icons8.com/?size=100&id=114041&format=png" alt="Back to top" width="70" height="70">
   </a>
 </p>
+
 <p align="center">
   Dibuat dengan ❤️ oleh <strong>HIMANG</strong>
 </p>
